@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return phpversion() . 'ok test 2';
 });
+
+
+Route::get('/test', function () {
+    return view('welcome');
+});
