@@ -8,8 +8,12 @@ pipeline {
         }
         stage("Deploy") {
             steps{
-                sh "cd /var/"
-                sh "touch test.txt"
+                sh "pwd"
+            }
+        }
+        stage("Deploy") {
+            steps{
+                sh "touch text.php"
             }
         }
     }
