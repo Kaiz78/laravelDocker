@@ -8,12 +8,7 @@ pipeline {
         }
         stage("Deploy") {
             steps{
-                sh "pwd"
-            }
-        }
-        stage("Deploy2") {
-            steps{
-                sh "touch text.php"
+                sh "docker-compose up -d --build"
             }
         }
     }
