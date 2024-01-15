@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return phpversion() . 'ok tedst 2';
+    return phpversion() . 'ok tedst 2 tet';
 });
 
 
