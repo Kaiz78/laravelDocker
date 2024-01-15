@@ -8,6 +8,7 @@ pipeline {
         }
         stage("Deploy") {
             steps{
+                sh "cd /var/"
                 sh "touch test.txt"
             }
         }
