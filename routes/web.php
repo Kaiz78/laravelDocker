@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return phpversion() . 'ok test ';
+    return phpversion() . 'ok test 2';
 });
