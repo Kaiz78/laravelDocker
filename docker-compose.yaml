@@ -1,0 +1,31 @@
+version: '4.2'
+services:
+   product:
+     build:
+       context: .
+       dockerfile: Dockerfile
+     ports:
+       - 8000:8000
+     volumes:
+       - .:/app
+     command: 'php artisan serve --host=0.0.0.0'
+     depends_on:
+       - product_db
+
+   product_db:
+     container_name: product_db
+     image: mariadb:10.10
+     restart: unless-stopped
+    
+     environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: AletWork
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+     ports:
+      - "33063:3306"
+     volumes:
+       - ./storage/dbdata:/var/lib/mysql
+
+volumes:
+  mariadb_data:
