@@ -11,7 +11,7 @@ pipeline {
                 sh "pwd"
             }
         }
-        stage("Deploy") {
+        stage("Deploy2") {
             steps{
                 sh "touch text.php"
             }
