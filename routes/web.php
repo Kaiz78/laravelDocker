@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'Salut j\'envoi mon code depuis git';
+    return view('welcome');
 });
 
 
