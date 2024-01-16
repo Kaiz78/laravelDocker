@@ -11,7 +11,7 @@ pipeline {
                 MY_PASSWORD = '4tc8*3pWcV-}4E'
             }
             steps{
-               sh "echo $MY_PASSWORD | sudo docker-compose up -d --build"
+               sh "echo \$MY_PASSWORD | sudo docker-compose up -d --build"
             }
         }
 
