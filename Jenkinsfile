@@ -11,7 +11,12 @@ pipeline {
                sh "rsync -a ../laravelDocker/ /var/www/laravelDocker/" 
             }
         }
+        stage("Build Project") {
+            steps{
+               sh "cd /var/www/la/ && docker-compose up -d --build"
+            }
+        }
 
-        
+
     }
 }
