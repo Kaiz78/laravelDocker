@@ -11,7 +11,7 @@ pipeline {
                 MY_PASSWORD = credentials('2')
             }
             steps{
-               sh "echo "Password: $MY_PASSWORD""
+               sh "echo Password: $MY_PASSWORD"
             }
         }
     }
