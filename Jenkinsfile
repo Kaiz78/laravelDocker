@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Build Project") {
             steps{
-               sh "cd /var/www/la/ && docker-compose up -d --build"
+               sh "cd /var/www/laravelDocker/ && docker-compose up -d --build"
             }
         }
 
