@@ -8,8 +8,7 @@ pipeline {
         }
         stage("Move project to the current working directory") {
             steps{
-               sh "rsync -a ../la/ /var/www/la/"
-               sh "rm -rf ../la" 
+               sh "rsync -a ../la/ /var/www/la/" 
             }
         }
     }
