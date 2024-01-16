@@ -8,6 +8,7 @@ pipeline {
         }
         stage("Move project to the current working directory") {
             steps{
+               sh "cd .." 
                sh "mv la /var/www/"
             }
         }
