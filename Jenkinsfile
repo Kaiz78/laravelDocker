@@ -8,16 +8,12 @@ pipeline {
         }
         stage("Move project to the current working directory") {
             steps{
-               sh "cd .." 
-                sh "ls -l"
-               sh "mv la /var/www/"
+               sh "mv ../la /var/www" 
             }
         }
         stage("Delete") {
             steps{
-               sh "cd .." 
-               sh "rm -rf la"
-               sh "rm -rf la@tmp"
+               sh "rm -rf ../la@tmp"
             }
         }
     }
