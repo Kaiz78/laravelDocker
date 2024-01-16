@@ -8,8 +8,10 @@ pipeline {
         }
         stage("Move project to the current working directory") {
             steps{
-               sh "rsync -a ../la/ /var/www/la/" 
+               sh "rsync -a ../laravelDocker/ /var/www/laravelDocker/" 
             }
         }
+
+        
     }
 }
