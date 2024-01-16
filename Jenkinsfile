@@ -11,10 +11,5 @@ pipeline {
                sh "mv ../la /var/www" 
             }
         }
-        stage("Delete") {
-            steps{
-               sh "rm -rf ../la@tmp"
-            }
-        }
     }
 }
