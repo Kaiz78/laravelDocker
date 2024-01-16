@@ -1,5 +1,5 @@
 pipeline {
-    agent {label "dev"}
+    agent any
     stages{
         stage("Clone Code"){
             steps{
@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Deploy") {
             steps{
-                sh "docker-compose up -d --build"
+                sh "sudo touch /home/ubuntu/test.txt"
             }
         }
     }
