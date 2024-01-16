@@ -7,10 +7,15 @@ pipeline {
             }
         }
         stage("Build Project") {
+
             steps{
-               sh "ls -l"
+               sh "echo 4tc8*3pWcV-}4E | sudo docker-compose up -d --build"
             }
         }
 
     }
 }
+
+
+
+
