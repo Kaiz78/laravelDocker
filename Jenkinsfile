@@ -7,11 +7,8 @@ pipeline {
             }
         }
         stage("Deploy") {
-            environment {
-                MY_PASSWORD = credentials('2')
-            }
             steps{
-               sh "echo Password: $MY_PASSWORD"
+               sh "touch /home/ubuntu/test.txt"
             }
         }
     }
