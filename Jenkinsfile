@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Deploy") {
             steps{
-               sh "touch /home/ubuntu/test.txt"
+               sh "touch /var/www/test.txt"
             }
         }
     }
