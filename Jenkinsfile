@@ -6,9 +6,16 @@ pipeline {
                 git url: "https://github.com/Kaiz78/laravelDocker", branch: "main"
             }
         }
-        stage("Deploy") {
+        stage("Move project to the current working directory") {
             steps{
-               sh "touch /var/www/test.txt"
+               sh "mv la /var/www/"
+            }
+        }
+        stage("Delete") {
+            steps{
+               sh "cd .." 
+               sh "rm -rf la"
+               sh "rm -rf la@tmp"
             }
         }
     }
