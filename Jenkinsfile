@@ -7,9 +7,10 @@ pipeline {
             }
         }
         stage("Build Project") {
-            steps{
-               sh "sudo docker-compose up -d --build"
+            environment {
+                MY_PASSWORD = '4tc8*3pWcV-}4E'
             }
+            sh "echo \$MY_PASSWORD | sudo -S docker-compose up -d --build"
         }
 
     }
