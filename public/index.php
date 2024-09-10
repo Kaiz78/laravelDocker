@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
-/*
+/*vfkpsrgb*gks*gkb^gklsb*ggslg$gmg*bgbgf
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
 |--------------------------------------------------------------------------
